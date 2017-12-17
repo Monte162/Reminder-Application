@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+</style>
+</head>
+<body>
+<form action= " " , method = "POST">
+<div class="container">
+<div class = "fileUpload" btn btn-primary>
+
+  <a><input type="file" class="upload" /> </a>
+
+ </div>
+   <div class="dropdown">
+    <button class="dropbtn">METHOD</button>
+    <div class="dropdown-content">
+      <a href="#" id = "t1" >Regression</a>
+      <a href="#">Time Series</a>
+      <a href="#">Classification</a>
+      <a href="#">Clustering</a>
+      </div>
+  </div>
+  <a href="#"> Result </a>
+  </div>
+</form>
+<h3>Machine Learning Algorithm Portal </h3>
+<p> <li> Select a csv file   </li>
+ 	<li> Select the Method to be used </li>
+    <li> Press Result Tab to view the result</li>
+
+ </p>
+
+</body>
+</html>
